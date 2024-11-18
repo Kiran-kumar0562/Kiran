@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+            customer.html
+        </title>
+        <style>
+             body{
+               background : linear-gradient(rgba(69, 72, 50, 0.2),rgba(31, 105, 190, 0.4));
+               background-size : cover;
+               margin : 0px;
+            }
+            #header{
+                height: 100px;
+                width: 100%;
+                background: rgba(255,255,255,1);
+                display: flex;
+                justify-content: space-between;
+            }
+            ul li {
+                display: inline-block;
+                margin: 0px 50px;
+            }
+            a{
+                color:white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            ul{
+                height: 53px;
+                width: 100%;
+                background: rgba(51, 46, 148, 0.9);
+                padding-top: 15px;               
+            }
+            #body{
+                height:400px;
+                width: 100%;               
+            }
+            #box{
+                height: 250;
+                width: 300;
+                border: 3px solid rgb(88, 75, 206);
+                margin-top: 50px;
+            }
+            th{
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <img src="logo.png" height="100" width="700">
+            <ul>
+                <Li><a href="index.html"> Home </a></Li>
+                <Li><a href="customer.html"> customer</a></Li>
+                <Li><a href="Book Now.html"> Book Now</a></Li>
+                <Li><a href="Share your car.html"> Share your car</a></Li>
+                
+            </ul>
+        </div>
+        <div id="body"> 
+            <center>
+                <div id="box">
+                    <h2 style="color:black;">customer login</h2>
+                    <table>
+                        <tr>
+                            <th>username:</th>
+                            <td><input type="text" name="username"></td>
+                        </tr>
+                        <tr>
+                            <th>password:</th>
+                            <td><input type="text" name="password"></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><input type="submit" value="login">
+                            <input type="reset" value="reset">
+                          </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td style="color:black;">create an account?<a href="cussign.html">signup</a></td>
+                            
+                        </tr>
+                    </table> 
+                </div>
+            </center>
+        </div>
+    </body>
+</html>

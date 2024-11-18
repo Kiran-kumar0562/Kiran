@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Video Clip</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        /* Define the moving video style */
+        #moving-video {
+            position: absolute;
+            width: 400px;
+            height: auto;
+            top: 50%;
+            left: -400px; /* Start from outside the left edge */
+            transform: translateY(-50%);
+            animation: moveVideo 10s linear infinite;
+        }
+
+        /* Keyframes to move the video from left to right */
+        @keyframes moveVideo {
+            0% {
+                left: -400px;
+            }
+            100% {
+                left: 100vw; /* Move to the right of the screen */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Element -->
+    <video id="moving-video" autoplay muted loop>
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- HTML content here -->
+</body>
+</html>
